@@ -1,0 +1,115 @@
+/* Responsive Design */
+@media screen and (max-width: 560px) {
+  .menu-button {
+    display: block;
+    padding: 1rem;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 60%;
+    text-align: center;
+  }
+  .navbar a {
+    padding: 1em;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .navbar li {
+    margin: 1rem;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .hero h2 {
+    font-size: 5rem;
+  }
+  .restaurant-card {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .restaurant-card {
+    width: 30%;
+    margin: 10px;
+  }
+  .restaurant,
+  .food {
+    margin: 0 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    /* width: 100%; */
+    min-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/*responsive review content */
+@media (max-width: 768px) {
+  .review-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .review-icon img {
+    max-width: 100%;
+  }
+}
+/* Detail content */
+@media (min-width: 768px) {
+  .container {
+    /* max-width: 768px; */
+    margin: 0 auto;
+  }
+  .information {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .side-info {
+    padding: 0 20px;
+  }
+
+  .restaurant-name,
+  .menu-title,
+  .review-title {
+    font-size: 24px;
+  }
+  .restaurant-image-detail {
+  min-width: 60vw;
+  }
+
+  .food-menu,
+  .drink-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .food-menu li,
+  .drink-menu li {
+    width: 50%;
+  }
+}
+
+/* Responsif review form */
+@media (min-width: 500px) {
+  .review-form {
+    max-width: 100%;
+    padding: 10px;
+  }
+  input[type='text'],
+  textarea {
+    font-size: 14px;
+  }
+}

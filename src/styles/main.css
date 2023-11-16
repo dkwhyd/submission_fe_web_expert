@@ -1,0 +1,405 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* skip link */
+.offline {
+  background-color: #333;
+  color: white;
+}
+.skip-link {
+  position: absolute;
+  top: 100px;
+  transform: translate(-2000px);
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  transform: translateY(0px);
+}
+
+/*  Header and Navigation Bar */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.menu-button {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+/*Hero Element */
+
+.hero {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.hero picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/*Restaurant List */
+.restaurant-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main,
+.content {
+  width: 100%;
+  height: 100%;
+}
+.content > h2,
+.food > h2 {
+  text-align: center;
+  margin: 3rem;
+}
+
+.restaurant-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  /*  height: 500px;*/
+  overflow: hidden;
+  position: relative;
+}
+.restaurant-card a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+.restaurant-card > .city {
+  width: 40%;
+  position: absolute;
+  top: 1rem;
+  padding: 10px;
+  z-index: 1;
+  line-height: 1rem;
+  left: 0;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.restaurant-card h2 {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 15em;
+}
+
+.restaurant-card > .card-body {
+  padding: 20px;
+  overflow: hidden;
+}
+.card-body a,
+h3 {
+  padding: 1rem 0;
+}
+.card-body > .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/*  Food */
+
+.food h2 {
+  text-align: center;
+}
+.category-list {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.category-image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Detail  */
+/* CSS Untuk Mobile First */
+.container {
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.restaurant-name {
+  margin-bottom: 1rem;
+}
+
+.menu-title,
+.desc-title,
+.review-title {
+  margin-top: 1rem;
+}
+.restaurant-image-detail,
+.restaurant-image {
+  max-width: 100%;
+}
+
+.food-title,
+.drink-title {
+  margin-top: 0.5rem;
+}
+.food-menu,
+.drink-menu {
+  list-style: none;
+  padding: 0;
+}
+/* Review */
+.review-content {
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.review-icon {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.review-icon img {
+  max-width: 50px;
+  height: auto;
+}
+
+.review-content {
+  flex: 1 1 auto;
+}
+
+.review-name {
+  font-weight: bold;
+  margin: 0;
+  font-size: 18px;
+}
+
+.review-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.review-date {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Review Form */
+.review-form {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Data not found */
+.data-not-found {
+  margin: 1rem;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.data-not-found h5 {
+  margin: 1rem;
+}
+.data-not-found {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.data-not-found h5 {
+  color: #333;
+}
+
+/* Loader */
+.loader {
+  border: 6px solid #626262;
+  border-top: 6px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Status */
+
+.status {
+  display: none;
+  background-color: rgb(187, 18, 18);
+}
+.status-offline {
+  display: block;
+}
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
