@@ -1,0 +1,20 @@
+
+
+<<< Recorded commands on Sat Nov 11 2023 19:46:19 GMT+0700 (Western Indonesia Time)
+I.seeElement('.restaurant_title')
+I.see('Melting Pot','.restaurant_title')
+I.grabTextFrom(locate('.restaurant_title').first())
+I.grabTextFrom(locate('.restaurant_title').after(0))
+I.grabTextFrom(locate('.restaurant_title').after(0))
+
+<<< Recorded commands on Sat Nov 11 2023 19:51:00 GMT+0700 (Western Indonesia Time)
+I.seeElement('.restaurant-card ')
+I.grabTextFrom(locate('.restaurant_title').first())
+I.grabTextFrom(locate('.restaurant_title').first())
+I.click(grabTextFrom(locate('.restaurant_title').first()))
+I.click(await grabTextFrom(locate('.restaurant_title').first()))
+
+<<< Recorded commands on Sat Nov 11 2023 20:25:40 GMT+0700 (Western Indonesia Time)
+I.seeElement('#likeButton')
+I.click('.restaurant_title')
+I.click(locate('.restaurant_title').first())
